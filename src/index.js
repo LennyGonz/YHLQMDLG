@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from "react-dom";
-import { Router } from "@reach/router"
 import Home from './pages';
+import SigninPage from './pages/signin';
 import './App.css';
 
-const App = () => {
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+function App() {
   return (
-    <div className="App">
-      <Router>
-        <Home path="/" />
-      </Router>
-    </div>
+    <Router>
+      <Switch>
+        <Route path='/' component={Home} exact />
+        <Route path='/signin' component={SigninPage} exact />
+      </Switch>
+    </Router>
   );
 }
 
