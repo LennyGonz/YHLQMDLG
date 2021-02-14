@@ -16,7 +16,7 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type='video/mp4'></VideoBg>
       </HeroBg>
       <HeroContent>
-        <HeroH1>Willis and Chelsea are bullies</HeroH1>
+        <HeroH1>Willis loves Waluigi</HeroH1>
         <HeroP>
           Real News
         </HeroP>
